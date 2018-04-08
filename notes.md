@@ -85,4 +85,8 @@ $ nf start
 // creating a heroku app
 $ heroku create
 
-// heroku adding dynoms
+# heroku adding dynoms
+$ heroku ps:scale web=1
+
+# heroku pushing updates
+$ git push heroku master

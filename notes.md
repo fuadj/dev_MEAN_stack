@@ -90,3 +90,6 @@ $ heroku ps:scale web=1
 
 # heroku pushing updates
 $ git push heroku master
+
+# locally installing required packages
+$ npm install

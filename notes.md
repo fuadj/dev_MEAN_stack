@@ -93,3 +93,24 @@ $ git push heroku master
 
 # locally installing required packages
 $ npm install
+
+
+
+#
+# Populating Jade templates
+#
+// There are 2 methods to populate Jade templates
+    1) Interpolation: inserting data into the middle of some other content
+        e.g: h1 Welcome to #{pageheader.title}
+        NOTE: if data has HTML, it will be escaped for security reasons
+                if you want the browser to render it as HTML, do the following
+                e.g: h1 Welcome to !{pageHeader.title}
+    2) Buffered code: you build the string using javascript
+        e.g: h1= "Welcome to " + pageHeader.title
+
+# Looping with Jade
+// to loop through an array in Jade templates
+
+$ each <entity-name> in <array-name>
+e.g:
+$ each location in locations

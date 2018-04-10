@@ -114,3 +114,8 @@ $ npm install
 $ each <entity-name> in <array-name>
 e.g:
 $ each location in locations
+
+
+# Running javascript inside Jade templates
+// to run javascript inside Jade templates
+$ prefix the line with a dash or a hyphen

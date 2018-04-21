@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 var dbURI = 'mongodb://localhost/dev_MEAN_stack';
+if (process.env.NODE_ENV === 'production') {
+    //dbURI = 'mongodb://dev:abcdabcd@ds151169.mlab.com:51169/dev_mean_stack';
+    dbURI = process.env.MONGOLAB_URI;
+}
 
 mongoose.connect(dbURI);
 
